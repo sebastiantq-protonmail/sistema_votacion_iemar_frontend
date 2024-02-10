@@ -1,0 +1,112 @@
+/* login.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.institution_auth-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative; /* Se establece como referencia para el posicionamiento absoluto de los hijos */
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.institution_auth-form {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    color: #333;
+    /* Cambiado a gris oscuro para el título */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group label {
+    width: 100%;
+    color: #088434;
+    /* Se mantiene el verde oscuro para el label */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-control::placeholder {
+    color: #bbb;
+}
+
+.form-control,
+.btn-api {
+    box-sizing: border-box;
+    /* Asegura que el padding y el borde sean incluidos en el ancho/altura total */
+}
+
+.form-control {
+    width: 100%;
+    /* Se ajustará al tamaño de su contenedor debido a 'box-sizing: border-box' */
+    padding: 10px 15px;
+    /* El padding debe ser igual al del botón para que coincidan en altura */
+    border: 2px solid #088434;
+    /* Se mantiene este borde */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    /* Añade un margen inferior para separar del botón */
+}
+
+.btn-api {
+    width: 100%;
+    /* Ocupará el 100% del ancho de su contenedor padre */
+    padding: 10px 15px;
+    /* Se asegura que el padding sea igual al del input */
+    border: 2px solid transparent;
+    /* Añade un borde transparente para que tenga el mismo tamaño que el input */
+    border-radius: 5px;
+    background-color: #088434;
+    /* Color verde de la bandera */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-api:hover {
+    background-color: #086D2C;
+    /* Un verde más oscuro para el hover */
+}
+
+.form-control:focus {
+    border-color: #D52B1E;
+    /* Rojo al enfocar para mantener la consistencia con la bandera */
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .institution_auth-form {
+        padding: 20px;
+        margin-bottom: 80px;
+        background-color: #fff;
+        box-shadow: none;
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .institution_auth-form {
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,15 @@
+<!-- voter.component.html -->
+<div class="voter_auth-form-container">
+    <form class="voter_auth-form" (ngSubmit)="onSubmit()">
+        <h1 class="form-title">Acceso Estudiantil</h1>
+        <div class="form-group">
+            <label for="document_number">Número de documento:</label>
+            <input type="text" id="document_number" class="form-control" [(ngModel)]="voter_auth.document_number" name="document_number"
+                placeholder="Ingrese el número de documento" required>
+            <label for="code">Código estudiantil:</label>
+            <input type="text" id="code" class="form-control" [(ngModel)]="voter_auth.code" name="code"
+                placeholder="Ingrese el código del estudiante" required>
+        </div>
+        <button type="submit" class="btn-api">Enviar</button>
+    </form>
+</div>

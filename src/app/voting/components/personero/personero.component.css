@@ -1,0 +1,40 @@
+.voting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.candidate {
+    border: 2px solid #088434;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.candidate h3 {
+    color: #333;
+}
+
+.candidate p {
+    color: #666;
+}
+
+.candidate button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #088434;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.candidate button:hover {
+    background-color: #086D2C;
+}

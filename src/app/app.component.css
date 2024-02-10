@@ -1,0 +1,13 @@
+/* src/app/app.component.css */
+
+/* Estilos básicos o vacío si no tienes estilos específicos para el componente raíz */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.router-outlet {
+    flex: 1;
+    /* Esto hace que el contenido crezca y ocupe cualquier espacio disponible */
+}

@@ -1,0 +1,47 @@
+:host {
+    /* :host se refiere al elemento del componente en sí */
+    width: 100%;
+}
+
+.social-media-icons,
+.footer-text {
+    text-align: center;
+    /* Asegura que el contenido esté centrado */
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    color: #088434;
+    /* El verde oscuro de la bandera de Tuluá */
+    font-size: 24px;
+    /* O el tamaño que prefieras */
+}
+
+.social-media-icons a:hover {
+    color: #086D2C;
+}
+
+.footer-text {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.footer-text p {
+    font-size: 16px;
+    margin: 0px;
+}
+
+.footer-text .fa-heart {
+    color: #D52B1E;
+    /* El rojo de la bandera de Tuluá */
+}
+
+@media (max-width: 768px) {
+
+    .social-media-icons,
+    .footer-text {
+        bottom: 5px;
+        /* Menos espacio en el fondo para dispositivos más pequeños */
+    }
+}

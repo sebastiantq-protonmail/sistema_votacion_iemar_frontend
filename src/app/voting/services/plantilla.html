@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Nuestro Sistema</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #FFCD00;
+            /* Amarillo */
+            color: #003893;
+            /* Azul */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            color: #212121;
+        }
+
+        .footer {
+            background-color: #CE1126;
+            /* Rojo */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        a {
+            color: #003893;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>¡Bienvenido(a) a Nuestro Sistema! (NIÑOS)</h1>
+        </div>
+        <div class="content">
+            <p>Hola {{ $json.nombre }} {{ $json.apellido }},</p>
+            <p>Estamos emocionados de tenerte con nosotros. Ahora formas parte de una comunidad donde podrás disfrutar
+                de todas las herramientas y funciones que hemos diseñado para ti.</p>
+            <p>Aquí tienes algunos pasos para comenzar:</p>
+            <ul>
+                <li>Completa tu perfil para que la comunidad te conozca.</li>
+                <li>Explora las diferentes secciones y herramientas disponibles.</li>
+                <li>Conéctate y colabora con otros usuarios.</li>
+            </ul>
+            <p>Si tienes alguna duda o necesitas ayuda, no dudes en contactarnos a través de <a
+                    href="mailto:support@example.com">support@example.com</a>.</p>
+            <p>¡Esperamos que disfrutes tu experiencia con nosotros!</p>
+
+            <a href="www.google.com"><button>PAGINA PARA ESTE USUARIO</button></a>
+
+        </div>
+        <div class="footer">
+            Este mensaje fue enviado por DSI. Todos los derechos reservados.
+        </div>
+    </div>
+
+</body>
+
+</html>

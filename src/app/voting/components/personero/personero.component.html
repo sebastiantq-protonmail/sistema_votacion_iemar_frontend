@@ -1,0 +1,8 @@
+<div class="voting-container">
+    <h2>{{ title }}</h2>
+    <div *ngFor="let candidate of candidates" class="candidate">
+        <h3>{{ candidate.name }}</h3>
+        <p>{{ candidate.description }}</p>
+        <button (click)="vote(candidate.id)">Votar</button>
+    </div>
+</div>

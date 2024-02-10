@@ -1,0 +1,51 @@
+/* landing-page.component.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landing-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.landing-container p {
+    color: #666;
+    margin-bottom: 30px;
+    width: 66%;
+}
+
+.landing-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #088434;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.landing-links a:hover {
+    text-decoration: underline;
+}
+
+.btn-landing {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #088434;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-landing:hover {
+    background-color: #086D2C;
+}

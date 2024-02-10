@@ -1,0 +1,12 @@
+<!-- login.component.html -->
+<div class="institution_auth-form-container">
+    <form class="institution_auth-form" (ngSubmit)="onSubmit()">
+        <h1 class="form-title">Acceso Institucional</h1>
+        <div class="form-group">
+            <label for="apiKey">API Key:</label>
+            <input type="text" id="apiKey" class="form-control" [(ngModel)]="institution_auth.apiKey" name="apiKey"
+                placeholder="Ingrese su API Key" required>
+        </div>
+        <button type="submit" class="btn-api">Enviar</button>
+    </form>
+</div>
